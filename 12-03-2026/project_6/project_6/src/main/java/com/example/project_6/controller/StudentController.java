@@ -23,7 +23,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    
+    // Create Student
     @PostMapping("/college")
     public ApiResponse<StudentResponse> getStudentDetails(@RequestBody StudentRequest request) {
 
@@ -32,7 +32,7 @@ public class StudentController {
         return new ApiResponse<>("Student created successfully", studentResponse);
     }
 
-    
+    // Add Teacher details to Student
     @PostMapping("/{id}/details")
     public ApiResponse<TeachersResponse> getStuDetails(
             @PathVariable Long id,

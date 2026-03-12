@@ -17,6 +17,9 @@ public class StudentEntity {
     @JoinColumn(name = "teacher_id")
     private TeachersEntity teachers;
 
+    public StudentEntity() {
+    }
+
     public Long getId() {
         return id;
     }

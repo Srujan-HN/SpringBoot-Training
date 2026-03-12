@@ -16,6 +16,9 @@ public class TeachersEntity {
     @Column(name = "dob")
     private int dob;
 
+    public TeachersEntity() {
+    }
+
     public long getId() {
         return id;
     }
