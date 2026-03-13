@@ -22,7 +22,7 @@ public class StudentService {
         this.teachersRepo = teachersRepo;
     }
 
-    // Create Student
+   
     public StudentResponse getStudent(StudentRequest studentRequest) {
 
         StudentEntity entity = new StudentEntity();
@@ -36,7 +36,7 @@ public class StudentService {
         );
     }
 
-    // Add Teacher Details to Student
+   
     public TeachersResponse getDetails(Long id, TeachersRequest request) {
 
         StudentEntity studentEntity = studentsRepo.findById(id)
