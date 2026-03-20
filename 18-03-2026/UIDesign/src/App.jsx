@@ -15,9 +15,9 @@ function App() {
       {/* <Random/> */}
       {/* <Grade /> */}
       {/* <Display/> */}
-      {/* <Prime/> */}
-      {/* <ListP/> */}
-      <PassFail />
+      <Prime/>
+       <ListP/>  
+      {/* <PassFail /> */}
     </>
   );
 }
